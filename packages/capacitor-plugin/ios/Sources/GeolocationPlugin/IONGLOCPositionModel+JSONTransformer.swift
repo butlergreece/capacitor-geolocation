@@ -1,4 +1,5 @@
 import Capacitor
+#if canImport(IONGeolocationLib)
 import IONGeolocationLib
 
 extension IONGLOCPositionModel {
@@ -21,3 +22,4 @@ extension IONGLOCPositionModel {
         ]
     }
 }
+#endif

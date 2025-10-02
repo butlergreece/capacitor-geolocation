@@ -1,5 +1,4 @@
 import Capacitor
-import IONGeolocationLib
 
 private enum GeolocationCallbackType {
     case requestPermissions
@@ -98,8 +97,8 @@ final class GeolocationCallbackManager {
         }
     }
 
-    func sendSuccess(with position: IONGLOCPositionModel) {
-        createPluginResult(status: .success(position.toJSObject()))
+    func sendSuccess(with positionJSObject: JSObject) {
+        createPluginResult(status: .success(positionJSObject))
     }
 
     func sendError(_ call: CAPPluginCall, error: GeolocationError) {
