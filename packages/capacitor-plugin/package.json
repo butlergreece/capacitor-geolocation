@@ -1,5 +1,5 @@
 {
-  "name": "@capacitor/geolocation",
+  "name": "@butlergreece/geolocation",
   "version": "7.1.5",
   "description": "The Geolocation API provides simple methods for getting and tracking the current position of the device using GPS, along with altitude, heading, and speed information if available.",
   "main": "dist/plugin.cjs.js",
@@ -19,10 +19,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/capacitor-geolocation.git"
+    "url": "https://github.com/butlergreece/capacitor-geolocation.git"
   },
   "bugs": {
-    "url": "https://github.com/ionic-team/capacitor-geolocation/issues"
+    "url": "https://github.com/butlergreece/capacitor-geolocation/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "capacitor",
